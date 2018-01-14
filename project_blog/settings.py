@@ -51,8 +51,8 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'project_blog.urls'
 
-TEMPLATE_DIR = os.path.dirname(__file__)
-print(TEMPLATE_DIR)
+PROJECT_DIR = os.path.dirname(__file__)
+TEMPLATE_DIR = os.path.join(PROJECT_DIR, 'templates')
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',

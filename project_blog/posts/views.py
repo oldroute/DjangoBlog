@@ -4,7 +4,7 @@ from .models import Post
 
 def posts(request):
     posts = Post.objects.all()
-    template = "template.html"
+    template = "posts/posts.html"
     context = {"posts": posts}
     return render(request, template, context)
 
